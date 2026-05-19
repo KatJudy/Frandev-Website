@@ -1,0 +1,195 @@
+{
+  "seo": {
+    "title": "Floor Coverings International Franchise Development",
+    "description": "Explore Floor Coverings International, the number one flooring franchise in North America with a scalable mobile showroom model."
+  },
+  "images": {
+    "hero": "assets/hero.jpg",
+    "model": "assets/showroom-driveway.jpg",
+    "growthPrimary": "assets/fleet.jpg",
+    "growthSecondary": "assets/van-detail.jpg"
+  },
+  "global": {
+    "primaryCta": "Request Franchise Information"
+  },
+  "hero": {
+    "eyebrow": "Mobile Showroom Franchise",
+    "title": "Join an elite flooring franchise built for scalable local ownership.",
+    "body": "Floor Coverings International is the number one flooring franchise in North America, bringing thousands of flooring options directly to customers through a branded Mobile Flooring Showroom.",
+    "secondaryCta": "Learn About the Model",
+    "formTitle": "Start the Conversation",
+    "formBody": "Tell us who you are and where you are interested in growing. A franchise representative will follow up.",
+    "formNote": "Straightforward information. No high-pressure sales tactics.",
+    "proof": [
+      {
+        "number": "1988",
+        "label": "showroom concept launched"
+      },
+      {
+        "number": "250+",
+        "label": "locations across North America"
+      },
+      {
+        "number": "3,000+",
+        "label": "flooring options in the showroom"
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "A Better Way to Buy Flooring",
+    "title": "FCI replaced the showroom visit with a customer-first experience.",
+    "body": "Homeowners no longer need to drive to a big-box retailer, sort through endless displays, carry samples home, and return to place an order. FCI franchisees bring the options, advice, and installation coordination to the customer.",
+    "ctaNote": "Get the next step from a franchise representative.",
+    "features": [
+      {
+        "title": "Disruptive Model",
+        "body": "Mobile Flooring Showrooms make the buying process more convenient, more personal, and better aligned with how consumers make decisions today."
+      },
+      {
+        "title": "Trusted Local Owners",
+        "body": "Local franchise owners and their teams manage the process from consultation through installation, with clear communication at every step."
+      },
+      {
+        "title": "Growth Category",
+        "body": "Flooring is one of the most valuable updates homeowners make, and FCI is positioned in a large, fragmented industry with room to grow."
+      }
+    ]
+  },
+  "details": {
+    "eyebrow": "Franchise Details",
+    "title": "Clear answers on market, investment, and support.",
+    "formTitle": "Request Information",
+    "ctaNote": "Ask about territory availability, qualification, and next steps.",
+    "disclaimer": "Investment and revenue figures are drawn from current Floor Coverings International franchise materials and should be reviewed in the Franchise Disclosure Document. Individual results vary.",
+    "panels": [
+      {
+        "id": "territory",
+        "title": "Territory Info",
+        "body": "FCI has more than 250 locations across the United States and Canada and continues to expand in qualified markets. The model is built for local ownership, large protected territories, and a professional in-home customer experience.",
+        "bullets": [
+          "Mobile showroom model allows owners to serve customers without a traditional retail storefront.",
+          "Franchisees specialize in custom residential flooring and local project management.",
+          "Growth conversations begin with market interest, candidate fit, and next-step timing."
+        ],
+        "metrics": [
+          {
+            "label": "Founded",
+            "value": "1988"
+          },
+          {
+            "label": "Franchising since",
+            "value": "1989"
+          },
+          {
+            "label": "North American locations",
+            "value": "250+"
+          }
+        ]
+      },
+      {
+        "id": "investment",
+        "title": "Investment",
+        "body": "The opportunity is designed for candidates who want to build a professionally staffed local business, not simply operate as a contractor. The first step is a confidential qualification conversation with the franchise development team.",
+        "bullets": [
+          "Total investment costs are listed at $154,400 to $341,000 in current franchise materials.",
+          "Average gross revenue for booked jobs across the system was reported at $1,180,809 in 2022.",
+          "The model centers on consultation, product selection, proposal, and installation coordination."
+        ],
+        "metrics": [
+          {
+            "label": "Startup investment",
+            "value": "$154K-$341K"
+          },
+          {
+            "label": "2022 booked-job revenue",
+            "value": "$1.18M avg."
+          },
+          {
+            "label": "Business type",
+            "value": "Mobile showroom"
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "title": "Support",
+        "body": "FCI owners are supported by a brand focused on trust, communication, and service. Franchisees consult customers on design, coordinate installation resources, and own the experience from start to finish.",
+        "bullets": [
+          "Mobile showrooms are stocked with carpet, hardwood, laminate, luxury vinyl, natural stone, tile, and more.",
+          "Products are kept current with design trends and tested by third parties.",
+          "Local teams provide honest advice without high-pressure sales tactics."
+        ],
+        "metrics": [
+          {
+            "label": "Showroom options",
+            "value": "3,000+"
+          },
+          {
+            "label": "Customer promise",
+            "value": "Seamless service"
+          },
+          {
+            "label": "Brand position",
+            "value": "The Stars of Flooring"
+          }
+        ]
+      }
+    ]
+  },
+  "model": {
+    "eyebrow": "The Mobile Flooring Showroom",
+    "title": "A service experience built around the customer's home.",
+    "body": "FCI franchisees bring flooring samples into the room where the decision will be made. Customers can see color, texture, and material in their own light, with guidance from a knowledgeable local team.",
+    "bullets": [
+      "Hardwood, carpet, luxury vinyl, laminate, natural stone, tile, specialty flooring, and more.",
+      "Consultation, product selection, proposal, installation coordination, and final walk-through.",
+      "A professional model built on convenience, honest advice, and customer satisfaction."
+    ],
+    "ctaNote": "Learn what ownership can look like in your market."
+  },
+  "growth": {
+    "eyebrow": "Growth-Oriented Ownership",
+    "title": "Built for owners who want a professional local business.",
+    "body": "FCI has grown from a mobile flooring concept into one of the largest flooring franchise systems in the United States and Canada by focusing on service, local accountability, and a better customer experience.",
+    "ctaNote": "Connect with the franchise development team."
+  },
+  "leadership": {
+    "eyebrow": "Executive Leadership",
+    "title": "Experienced leadership behind the franchise system.",
+    "body": "FCI's leadership team brings decades of franchise, operations, marketing, technology, and development experience to support owners as they build professional local businesses.",
+    "ctaNote": "Speak with the franchise development team about candidate fit.",
+    "people": [
+      {
+        "name": "Tom Wood",
+        "role": "President and CEO",
+        "bio": "Leads FCI with deep FirstService Brands experience across franchise strategy, operations, and brand expansion."
+      },
+      {
+        "name": "Chad Schloerke",
+        "role": "Chief Operating Officer",
+        "bio": "Helped scale FCI from an early mobile concept into a professionally staffed operating model built for growth."
+      },
+      {
+        "name": "Stacey Vogler",
+        "role": "Chief Marketing Officer",
+        "bio": "Guides brand experience and marketing strategy with a focus on profitable growth for the franchise system."
+      },
+      {
+        "name": "Albert Hermans",
+        "role": "Chief Development Officer",
+        "bio": "Leads franchise development with hands-on operations experience and a practical view of franchisee success."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Interested in owning a Mobile Showroom franchise?",
+    "body": "If Floor Coverings International sounds like the right franchise opportunity, start here. Share a few details and a franchise representative will be in touch.",
+    "note": "Direct, respectful communication from the first conversation.",
+    "formNote": "By submitting, you agree to be contacted about franchise opportunities."
+  },
+  "footer": {
+    "copyright": "© 2026 Floor Coverings International",
+    "legal": "For qualified candidates only. Offering by FDD where required."
+  }
+}

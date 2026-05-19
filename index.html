@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Floor Coverings International Franchise Development</title>
+    <meta
+      name="description"
+      content="Explore Floor Coverings International, the number one flooring franchise in North America with a scalable mobile showroom model."
+    />
+    <style>
+      :root {
+        --charcoal: #292929;
+        --slate: #949494;
+        --warm: #cec8c1;
+        --taupe: #9c9184;
+        --navy: #1c294a;
+        --green: #80d14a;
+        --aqua: #00d9ed;
+        --red: #d01f35;
+        --orange: #ff7b00;
+        --white: #ffffff;
+        --paper: #f5f3ef;
+        --line: rgba(41, 41, 41, 0.14);
+        --shadow: 0 18px 46px rgba(28, 41, 74, 0.16);
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--charcoal);
+        font-family:
+          Arial, Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+        background: var(--paper);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      .site-nav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(14px);
+      }
+
+      .nav-inner,
+      .section-inner,
+      .hero-inner {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        min-height: 76px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        width: min(312px, 52vw);
+      }
+
+      .brand img {
+        width: 100%;
+        height: auto;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--charcoal);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .nav-links a:hover {
+        color: var(--navy);
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 18px;
+        border: 0;
+        border-radius: var(--radius);
+        color: var(--charcoal);
+        background: var(--green);
+        font: inherit;
+        font-weight: 800;
+        cursor: pointer;
+        box-shadow: 0 12px 24px rgba(128, 209, 74, 0.24);
+        transition:
+          transform 160ms ease,
+          filter 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+        filter: brightness(0.96);
+        box-shadow: 0 16px 28px rgba(128, 209, 74, 0.3);
+      }
+
+      .button.secondary {
+        color: var(--white);
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        box-shadow: none;
+      }
+
+      .hero {
+        min-height: calc(100vh - 76px);
+        display: grid;
+        align-items: end;
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        color: var(--white);
+        background:
+          linear-gradient(90deg, rgba(28, 41, 74, 0.94), rgba(28, 41, 74, 0.72) 44%, rgba(28, 41, 74, 0.18)),
+          url("assets/hero.jpg") center / cover;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 28%;
+        z-index: -1;
+        background: linear-gradient(0deg, rgba(28, 41, 74, 0.68), transparent);
+      }
+
+      .hero-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(330px, 0.56fr);
+        gap: 44px;
+        align-items: end;
+        padding: 78px 0 56px;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--green);
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 18px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(44px, 6vw, 78px);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-family: Georgia, "Times New Roman", serif;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        max-width: 660px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 20px;
+      }
+
+      .hero-actions,
+      .section-cta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .hero-proof {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        max-width: 720px;
+        margin-top: 42px;
+      }
+
+      .proof-item {
+        border-left: 3px solid var(--aqua);
+        padding-left: 14px;
+      }
+
+      .proof-number {
+        display: block;
+        font-size: 27px;
+        font-weight: 900;
+      }
+
+      .proof-label {
+        color: rgba(255, 255, 255, 0.76);
+        font-size: 13px;
+      }
+
+      .lead-box {
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: var(--radius);
+        padding: 24px;
+        color: var(--charcoal);
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow);
+      }
+
+      .lead-box h2,
+      .lead-box h3 {
+        margin-bottom: 8px;
+        color: var(--navy);
+        font-size: 24px;
+        line-height: 1.16;
+      }
+
+      .lead-box p,
+      .feature p,
+      .accordion-content p,
+      .section-header p,
+      .form-note,
+      .form-status,
+      .cta-note {
+        color: #606060;
+      }
+
+      .form-grid {
+        display: grid;
+        gap: 12px;
+      }
+
+      .two-col {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      label {
+        display: grid;
+        gap: 6px;
+        color: var(--charcoal);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        min-height: 44px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 11px 12px;
+        color: var(--charcoal);
+        background: var(--white);
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 96px;
+        resize: vertical;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: 3px solid rgba(128, 209, 74, 0.24);
+        border-color: var(--green);
+      }
+
+      .form-note,
+      .form-status {
+        font-size: 12px;
+      }
+
+      .section {
+        padding: 82px 0;
+        background: var(--white);
+      }
+
+      .section.alt {
+        background: var(--paper);
+      }
+
+      .section-header {
+        display: grid;
+        grid-template-columns: minmax(0, 0.78fr) minmax(280px, 0.42fr);
+        gap: 42px;
+        align-items: end;
+        margin-bottom: 36px;
+      }
+
+      .section-header h2,
+      .cta-inner h2 {
+        margin-bottom: 12px;
+        color: var(--navy);
+        font-size: clamp(32px, 4vw, 52px);
+        line-height: 1.06;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .feature {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 24px;
+        background: var(--white);
+      }
+
+      .feature h3 {
+        margin-bottom: 8px;
+        color: var(--navy);
+        font-size: 20px;
+      }
+
+      .tile-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 12px);
+        gap: 4px;
+        width: 32px;
+        transform: rotate(45deg);
+        margin: 6px 0 24px 8px;
+      }
+
+      .tile-icon span {
+        width: 12px;
+        height: 12px;
+        background: var(--aqua);
+      }
+
+      .tile-icon span:nth-child(2) {
+        background: var(--orange);
+      }
+
+      .tile-icon span:nth-child(3) {
+        background: var(--green);
+      }
+
+      .tile-icon span:nth-child(4) {
+        background: var(--red);
+      }
+
+      .accordion-wrap {
+        display: grid;
+        gap: 14px;
+      }
+
+      details {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: 0 10px 28px rgba(41, 41, 41, 0.06);
+      }
+
+      summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 22px 24px;
+        cursor: pointer;
+        color: var(--navy);
+        font-size: 20px;
+        font-weight: 900;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::after {
+        content: "+";
+        flex: 0 0 auto;
+        display: grid;
+        place-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        color: var(--charcoal);
+        background: rgba(128, 209, 74, 0.26);
+        font-size: 24px;
+      }
+
+      details[open] summary::after {
+        content: "-";
+      }
+
+      .accordion-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+        gap: 24px;
+        padding: 0 24px 24px;
+      }
+
+      .metric-list {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .metric-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid var(--line);
+        padding: 10px 0;
+        color: #606060;
+      }
+
+      .metric-list strong {
+        color: var(--navy);
+      }
+
+      .check-list {
+        display: grid;
+        gap: 12px;
+        margin: 24px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .check-list li {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 12px;
+        align-items: start;
+        color: #606060;
+      }
+
+      .check-list li::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        margin-top: 5px;
+        background: var(--green);
+        transform: rotate(45deg);
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: minmax(0, 0.82fr) minmax(320px, 0.58fr);
+        gap: 38px;
+        align-items: center;
+      }
+
+      .image-panel {
+        min-height: 500px;
+        border-radius: var(--radius);
+        background: url("assets/showroom-driveway.jpg") center / cover;
+        box-shadow: var(--shadow);
+      }
+
+      .photo-strip {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .photo-strip div {
+        min-height: 270px;
+        border-radius: var(--radius);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .photo-strip div:first-child {
+        background-image: url("assets/fleet.jpg");
+      }
+
+      .photo-strip div:last-child {
+        background-image: url("assets/van-detail.jpg");
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .team-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 22px;
+        background: var(--white);
+        box-shadow: 0 12px 28px rgba(41, 41, 41, 0.05);
+      }
+
+      .team-card h3 {
+        margin-bottom: 4px;
+        color: var(--navy);
+        font-size: 20px;
+      }
+
+      .team-role {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--taupe);
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .team-card p {
+        margin-bottom: 0;
+        color: #606060;
+      }
+
+      .disclaimer {
+        max-width: 780px;
+        margin: 18px 0 0;
+        color: #606060;
+        font-size: 12px;
+      }
+
+      .cta-band {
+        color: var(--white);
+        background: var(--navy);
+      }
+
+      .cta-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(320px, 0.52fr);
+        gap: 34px;
+        align-items: center;
+      }
+
+      .cta-inner h2 {
+        color: var(--white);
+      }
+
+      .cta-inner p,
+      .cta-band .cta-note {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .footer {
+        padding: 30px 0;
+        color: #606060;
+        background: var(--white);
+        font-size: 14px;
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .mobile-cta {
+        display: none;
+      }
+
+      @media (max-width: 900px) {
+        .nav-links,
+        .site-nav .nav-inner > .button:not(.mobile-cta) {
+          display: none;
+        }
+
+        .mobile-cta {
+          display: inline-flex;
+        }
+
+        .hero-inner,
+        .section-header,
+        .split,
+        .accordion-content,
+        .cta-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+          background-position: 62% center;
+        }
+
+        .hero-proof,
+        .feature-grid,
+        .photo-strip,
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .image-panel {
+          min-height: 360px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .nav-inner,
+        .section-inner,
+        .hero-inner {
+          width: min(100% - 28px, 1180px);
+        }
+
+        .brand {
+          width: min(236px, 54vw);
+        }
+
+        .site-nav .button {
+          min-height: 40px;
+          padding: 0 12px;
+          font-size: 13px;
+        }
+
+        h1 {
+          font-size: 42px;
+        }
+
+        .hero-copy {
+          font-size: 17px;
+        }
+
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+
+        .section {
+          padding: 62px 0;
+        }
+
+        summary {
+          padding: 18px;
+          font-size: 18px;
+        }
+
+        .accordion-content {
+          padding: 0 18px 18px;
+        }
+
+        .footer-inner {
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="Floor Coverings International franchise home">
+          <img src="assets/logo-black.png" alt="Floor Coverings International" />
+        </a>
+        <div class="nav-links">
+          <a href="#territory">Territory</a>
+          <a href="#investment">Investment</a>
+          <a href="#support">Support</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#apply">Contact</a>
+        </div>
+        <a class="button mobile-cta" href="#apply" data-cta="nav-mobile-request-franchise-information">
+          Request Info
+        </a>
+        <a class="button" href="#qualification" data-cta="nav-request-franchise-information">
+          Request Franchise Information
+        </a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow">Mobile Showroom Franchise</p>
+            <h1 id="hero-title">Join an elite flooring franchise built for scalable local ownership.</h1>
+            <p class="hero-copy">
+              Floor Coverings International is the number one flooring franchise in North America,
+              bringing thousands of flooring options directly to customers through a branded Mobile
+              Flooring Showroom.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#apply" data-cta="hero-request-franchise-information">
+                Request Franchise Information
+              </a>
+              <a class="button secondary" href="#territory" data-cta="hero-learn-about-the-model">
+                Learn About the Model
+              </a>
+            </div>
+            <div class="hero-proof" aria-label="Franchise highlights">
+              <div class="proof-item">
+                <span class="proof-number">1988</span>
+                <span class="proof-label">showroom concept launched</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-number">250+</span>
+                <span class="proof-label">locations across North America</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-number">3,000+</span>
+                <span class="proof-label">flooring options in the showroom</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="lead-box" id="qualification" aria-labelledby="quick-form-title">
+            <h2 id="quick-form-title">Start the Conversation</h2>
+            <p>
+              Tell us who you are and where you are interested in growing. A franchise
+              representative will follow up.
+            </p>
+            <form class="form-grid lead-form">
+              <div class="form-grid two-col">
+                <label>
+                  First name
+                  <input name="first-name" autocomplete="given-name" required />
+                </label>
+                <label>
+                  Last name
+                  <input name="last-name" autocomplete="family-name" required />
+                </label>
+              </div>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>
+                Market of interest
+                <input name="territory" placeholder="City, state, or region" required />
+              </label>
+              <button class="button" type="submit" data-cta="hero-form-request-franchise-information">
+                Request Franchise Information
+              </button>
+              <span class="form-status" role="status" aria-live="polite"></span>
+              <span class="form-note">Straightforward information. No high-pressure sales tactics.</span>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="why-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">A Better Way to Buy Flooring</p>
+              <h2 id="why-title">FCI replaced the showroom visit with a customer-first experience.</h2>
+            </div>
+            <p>
+              Homeowners no longer need to drive to a big-box retailer, sort through endless displays,
+              carry samples home, and return to place an order. FCI franchisees bring the options,
+              advice, and installation coordination to the customer.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature">
+              <div class="tile-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <h3>Disruptive Model</h3>
+              <p>
+                Mobile Flooring Showrooms make the buying process more convenient, more personal, and
+                better aligned with how consumers make decisions today.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="tile-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <h3>Trusted Local Owners</h3>
+              <p>
+                Local franchise owners and their teams manage the process from consultation through
+                installation, with clear communication at every step.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="tile-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <h3>Growth Category</h3>
+              <p>
+                Flooring is one of the most valuable updates homeowners make, and FCI is positioned in
+                a large, fragmented industry with room to grow.
+              </p>
+            </article>
+          </div>
+
+          <div class="section-cta">
+            <a class="button" href="#apply" data-cta="why-request-franchise-information">
+              Request Franchise Information
+            </a>
+            <span class="cta-note">Get the next step from a franchise representative.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" aria-labelledby="details-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Franchise Details</p>
+              <h2 id="details-title">Clear answers on market, investment, and support.</h2>
+            </div>
+            <form class="lead-box form-grid lead-form" aria-label="Request franchise information">
+              <h3>Request Information</h3>
+              <label>
+                Email
+                <input type="email" name="overview-email" autocomplete="email" required />
+              </label>
+              <button class="button" type="submit" data-cta="details-form-request-franchise-information">
+                Request Franchise Information
+              </button>
+              <span class="form-status" role="status" aria-live="polite"></span>
+            </form>
+          </div>
+
+          <div class="accordion-wrap">
+            <details id="territory" open>
+              <summary>Territory Info</summary>
+              <div class="accordion-content">
+                <div>
+                  <p>
+                    FCI has more than 250 locations across the United States and Canada and continues
+                    to expand in qualified markets. The model is built for local ownership, large
+                    protected territories, and a professional in-home customer experience.
+                  </p>
+                  <ul class="check-list">
+                    <li>Mobile showroom model allows owners to serve customers without a traditional retail storefront.</li>
+                    <li>Franchisees specialize in custom residential flooring and local project management.</li>
+                    <li>Growth conversations begin with market interest, candidate fit, and next-step timing.</li>
+                  </ul>
+                </div>
+                <ul class="metric-list" aria-label="Territory metrics">
+                  <li><span>Founded</span><strong>1988</strong></li>
+                  <li><span>Franchising since</span><strong>1989</strong></li>
+                  <li><span>North American locations</span><strong>250+</strong></li>
+                </ul>
+              </div>
+            </details>
+
+            <details id="investment">
+              <summary>Investment</summary>
+              <div class="accordion-content">
+                <div>
+                  <p>
+                    The opportunity is designed for candidates who want to build a professionally staffed
+                    local business, not simply operate as a contractor. The first step is a confidential
+                    qualification conversation with the franchise development team.
+                  </p>
+                  <ul class="check-list">
+                    <li>Total investment costs are listed at $154,400 to $341,000 in current franchise materials.</li>
+                    <li>Average gross revenue for booked jobs across the system was reported at $1,180,809 in 2022.</li>
+                    <li>The model centers on consultation, product selection, proposal, and installation coordination.</li>
+                  </ul>
+                </div>
+                <ul class="metric-list" aria-label="Investment metrics">
+                  <li><span>Startup investment</span><strong>$154K-$341K</strong></li>
+                  <li><span>2022 booked-job revenue</span><strong>$1.18M avg.</strong></li>
+                  <li><span>Business type</span><strong>Mobile showroom</strong></li>
+                </ul>
+              </div>
+            </details>
+
+            <details id="support">
+              <summary>Support</summary>
+              <div class="accordion-content">
+                <div>
+                  <p>
+                    FCI owners are supported by a brand focused on trust, communication, and service.
+                    Franchisees consult customers on design, coordinate installation resources, and own
+                    the experience from start to finish.
+                  </p>
+                  <ul class="check-list">
+                    <li>Mobile showrooms are stocked with carpet, hardwood, laminate, luxury vinyl, natural stone, tile, and more.</li>
+                    <li>Products are kept current with design trends and tested by third parties.</li>
+                    <li>Local teams provide honest advice without high-pressure sales tactics.</li>
+                  </ul>
+                </div>
+                <ul class="metric-list" aria-label="Support metrics">
+                  <li><span>Showroom options</span><strong>3,000+</strong></li>
+                  <li><span>Customer promise</span><strong>Seamless service</strong></li>
+                  <li><span>Brand position</span><strong>The Stars of Flooring</strong></li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <div class="section-cta">
+            <a class="button" href="#apply" data-cta="details-request-franchise-information">
+              Request Franchise Information
+            </a>
+            <span class="cta-note">Ask about territory availability, qualification, and next steps.</span>
+          </div>
+          <p class="disclaimer">
+            Investment and revenue figures are drawn from current Floor Coverings International
+            franchise materials and should be reviewed in the Franchise Disclosure Document. Individual
+            results vary.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="model-title">
+        <div class="section-inner split">
+          <div class="image-panel" role="img" aria-label="Floor Coverings International Mobile Flooring Showroom"></div>
+          <div>
+            <p class="eyebrow">The Mobile Flooring Showroom</p>
+            <h2 id="model-title">A service experience built around the customer's home.</h2>
+            <p>
+              FCI franchisees bring flooring samples into the room where the decision will be made.
+              Customers can see color, texture, and material in their own light, with guidance from a
+              knowledgeable local team.
+            </p>
+            <ul class="check-list">
+              <li>Hardwood, carpet, luxury vinyl, laminate, natural stone, tile, specialty flooring, and more.</li>
+              <li>Consultation, product selection, proposal, installation coordination, and final walk-through.</li>
+              <li>A professional model built on convenience, honest advice, and customer satisfaction.</li>
+            </ul>
+            <div class="section-cta">
+              <a class="button" href="#apply" data-cta="model-request-franchise-information">
+                Request Franchise Information
+              </a>
+              <span class="cta-note">Learn what ownership can look like in your market.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" aria-labelledby="growth-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Growth-Oriented Ownership</p>
+              <h2 id="growth-title">Built for owners who want a professional local business.</h2>
+            </div>
+            <p>
+              FCI has grown from a mobile flooring concept into one of the largest flooring franchise
+              systems in the United States and Canada by focusing on service, local accountability,
+              and a better customer experience.
+            </p>
+          </div>
+          <div class="photo-strip" aria-label="Floor Coverings International showroom photography">
+            <div role="img" aria-label="Floor Coverings International mobile showroom fleet"></div>
+            <div role="img" aria-label="Floor Coverings International showroom vehicle detail"></div>
+          </div>
+          <div class="section-cta">
+            <a class="button" href="#apply" data-cta="growth-request-franchise-information">
+              Request Franchise Information
+            </a>
+            <span class="cta-note">Connect with the franchise development team.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="leadership" aria-labelledby="leadership-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Executive Leadership</p>
+              <h2 id="leadership-title">Experienced leadership behind the franchise system.</h2>
+            </div>
+            <p>
+              FCI's leadership team brings decades of franchise, operations, marketing, technology,
+              and development experience to support owners as they build professional local businesses.
+            </p>
+          </div>
+
+          <div class="team-grid" aria-label="Floor Coverings International executive team">
+            <article class="team-card">
+              <h3>Tom Wood</h3>
+              <span class="team-role">President and CEO</span>
+              <p>
+                Leads FCI with deep FirstService Brands experience across franchise strategy,
+                operations, and brand expansion.
+              </p>
+            </article>
+            <article class="team-card">
+              <h3>Chad Schloerke</h3>
+              <span class="team-role">Chief Operating Officer</span>
+              <p>
+                Helped scale FCI from an early mobile concept into a professionally staffed operating
+                model built for growth.
+              </p>
+            </article>
+            <article class="team-card">
+              <h3>Stacey Vogler</h3>
+              <span class="team-role">Chief Marketing Officer</span>
+              <p>
+                Guides brand experience and marketing strategy with a focus on profitable growth for
+                the franchise system.
+              </p>
+            </article>
+            <article class="team-card">
+              <h3>Albert Hermans</h3>
+              <span class="team-role">Chief Development Officer</span>
+              <p>
+                Leads franchise development with hands-on operations experience and a practical view
+                of franchisee success.
+              </p>
+            </article>
+          </div>
+
+          <div class="section-cta">
+            <a class="button" href="#apply" data-cta="leadership-request-franchise-information">
+              Request Franchise Information
+            </a>
+            <span class="cta-note">Speak with the franchise development team about candidate fit.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-band" id="apply" aria-labelledby="apply-title">
+        <div class="section-inner cta-inner">
+          <div>
+            <p class="eyebrow">Contact Us</p>
+            <h2 id="apply-title">Interested in owning a Mobile Showroom franchise?</h2>
+            <p>
+              If Floor Coverings International sounds like the right franchise opportunity, start here.
+              Share a few details and a franchise representative will be in touch.
+            </p>
+            <div class="section-cta">
+              <span class="cta-note">
+                Direct, respectful communication from the first conversation.
+              </span>
+            </div>
+          </div>
+          <form class="lead-box form-grid lead-form" aria-label="Franchise contact form">
+            <div class="form-grid two-col">
+              <label>
+                First name
+                <input name="apply-first-name" autocomplete="given-name" required />
+              </label>
+              <label>
+                Last name
+                <input name="apply-last-name" autocomplete="family-name" required />
+              </label>
+            </div>
+            <label>
+              Email
+              <input type="email" name="apply-email" autocomplete="email" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="apply-phone" autocomplete="tel" required />
+            </label>
+            <label>
+              Market of interest
+              <input name="apply-market" placeholder="City, state, or region" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" placeholder="Tell us about your timeline, goals, or questions"></textarea>
+            </label>
+            <button class="button" type="submit" data-cta="apply-form-request-franchise-information">
+              Request Franchise Information
+            </button>
+            <span class="form-status" role="status" aria-live="polite"></span>
+            <span class="form-note">By submitting, you agree to be contacted about franchise opportunities.</span>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-inner footer-inner">
+        <span>&copy; 2026 Floor Coverings International</span>
+        <span>For qualified candidates only. Offering by FDD where required.</span>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".lead-form").forEach((form) => {
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const status = form.querySelector(".form-status");
+          status.textContent = "Thank you. Your request has been received.";
+          form.reset();
+        });
+      });
+    </script>
+    <script src="site-content.js"></script>
+  </body>
+</html>
