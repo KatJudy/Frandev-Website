@@ -4,10 +4,10 @@
     "description": "Explore Floor Coverings International, the number one flooring franchise in North America with a scalable mobile showroom model."
   },
   "images": {
-    "hero": "assets/hero.jpg",
-    "model": "assets/showroom-driveway.jpg",
-    "growthPrimary": "assets/fleet.jpg",
-    "growthSecondary": "assets/van-detail.jpg"
+    "hero": "hero.jpg",
+    "model": "showroom-driveway.jpg",
+    "growthPrimary": "fleet.jpg",
+    "growthSecondary": "van-detail.jpg"
   },
   "global": {
     "primaryCta": "Request Franchise Information"
