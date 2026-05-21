@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Broker Resources | Floor Coverings International</title>
+    <meta
+      name="description"
+      content="Private broker resources for introducing qualified candidates to Floor Coverings International."
+    />
+    <style>
+      :root {
+        --charcoal: #292929;
+        --muted: #606060;
+        --paper: #f5f3ef;
+        --white: #ffffff;
+        --navy: #1c294a;
+        --green: #80d14a;
+        --aqua: #00d9ed;
+        --line: rgba(41, 41, 41, 0.13);
+        --shadow: 0 18px 44px rgba(28, 41, 74, 0.13);
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--charcoal);
+        font-family:
+          Arial, Helvetica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+        background: var(--white);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img,
+      iframe {
+        display: block;
+        max-width: 100%;
+      }
+
+      .wrap {
+        width: min(1180px, calc(100% - 36px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 66px 0 70px;
+        color: var(--white);
+        text-align: center;
+        background: var(--navy);
+      }
+
+      .hero h1 {
+        margin: 0 0 8px;
+        font-size: clamp(34px, 5vw, 54px);
+        line-height: 1.02;
+      }
+
+      .hero .subhead {
+        margin: 0 0 12px;
+        color: rgba(255, 255, 255, 0.78);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 20px;
+        font-style: italic;
+      }
+
+      .hero p:last-child {
+        max-width: 720px;
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.76);
+        font-size: 14px;
+      }
+
+      .mini-nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(12px);
+      }
+
+      .mini-nav .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        min-height: 54px;
+        overflow-x: auto;
+        color: var(--navy);
+        font-size: 13px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .section.alt {
+        background: var(--paper);
+      }
+
+      .section-header {
+        max-width: 760px;
+        margin-bottom: 30px;
+      }
+
+      .section-header.center {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        color: var(--navy);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(30px, 4vw, 46px);
+        line-height: 1.06;
+      }
+
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      .section-header p,
+      .card p,
+      .talk-point p,
+      .download-card p,
+      .contact-card p,
+      .private-note {
+        color: var(--muted);
+      }
+
+      .video-grid,
+      .proof-grid,
+      .download-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .video-grid.featured {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .card,
+      .download-card,
+      .contact-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: 0 12px 28px rgba(41, 41, 41, 0.06);
+        overflow: hidden;
+      }
+
+      .video-frame {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        border: 0;
+        background: var(--navy);
+      }
+
+      .card-body,
+      .download-card,
+      .contact-card {
+        padding: 18px;
+      }
+
+      .card h3,
+      .download-card h3 {
+        margin-bottom: 6px;
+        color: var(--navy);
+        font-size: 18px;
+      }
+
+      .resource-link {
+        color: var(--navy);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .action-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .action-panel {
+        min-height: 260px;
+        border-radius: var(--radius);
+        padding: 34px;
+        color: var(--white);
+        background: var(--navy);
+        box-shadow: var(--shadow);
+      }
+
+      .action-panel.green {
+        color: var(--charcoal);
+        background: var(--green);
+      }
+
+      .step {
+        display: inline-block;
+        margin-bottom: 22px;
+        border-radius: 999px;
+        padding: 5px 10px;
+        color: var(--white);
+        background: rgba(128, 209, 74, 0.24);
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .green .step {
+        color: var(--navy);
+        background: rgba(255, 255, 255, 0.48);
+      }
+
+      .action-panel h2 {
+        max-width: 380px;
+        color: inherit;
+        font-size: clamp(32px, 5vw, 52px);
+      }
+
+      .script-word {
+        display: block;
+        color: var(--green);
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+      }
+
+      .green .script-word {
+        color: var(--navy);
+      }
+
+      .action-panel p {
+        max-width: 430px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: 12px;
+        border-radius: var(--radius);
+        padding: 0 16px;
+        color: var(--charcoal);
+        background: var(--green);
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      .green .button {
+        color: var(--white);
+        background: var(--navy);
+      }
+
+      .talk-list {
+        display: grid;
+        gap: 14px;
+      }
+
+      .talk-point {
+        display: grid;
+        grid-template-columns: 74px 1fr;
+        gap: 18px;
+        border-left: 4px solid var(--green);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        background: var(--white);
+      }
+
+      .talk-number {
+        color: var(--navy);
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .talk-point h3 {
+        margin-bottom: 4px;
+        color: var(--navy);
+        font-size: 16px;
+      }
+
+      .download-card {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 16px;
+        align-items: start;
+      }
+
+      .pdf-icon {
+        display: grid;
+        place-items: center;
+        width: 72px;
+        height: 92px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        color: var(--navy);
+        background: linear-gradient(180deg, #ffffff, #edf3f6);
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      .contact-section {
+        color: var(--white);
+        background: var(--navy);
+      }
+
+      .contact-section h2,
+      .contact-section .eyebrow {
+        color: var(--white);
+      }
+
+      .contact-section .eyebrow {
+        color: var(--green);
+      }
+
+      .contact-card {
+        max-width: 520px;
+        margin: 26px auto 0;
+        color: var(--charcoal);
+        text-align: left;
+        background: rgba(255, 255, 255, 0.92);
+      }
+
+      .contact-name {
+        margin-bottom: 2px;
+        color: var(--navy);
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      .private-note {
+        max-width: 620px;
+        margin: 24px auto 0;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .footer {
+        padding: 46px 0;
+        color: rgba(255, 255, 255, 0.72);
+        background: #14213d;
+        font-size: 13px;
+      }
+
+      .footer-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+
+      .footer img {
+        width: 220px;
+        margin-bottom: 14px;
+        filter: brightness(0) invert(1);
+      }
+
+      @media (max-width: 900px) {
+        .video-grid,
+        .video-grid.featured,
+        .proof-grid,
+        .download-grid,
+        .action-grid,
+        .footer-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .action-panel {
+          min-height: auto;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .section {
+          padding: 54px 0;
+        }
+
+        .mini-nav .wrap {
+          justify-content: flex-start;
+        }
+
+        .talk-point,
+        .download-card {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <h1>Broker Resources</h1>
+        <p class="subhead">For brokers in our network</p>
+        <p>
+          Everything you need to pitch Floor Coverings International to a qualified candidate.
+          Bookmark this page and use it before, during, and after a candidate conversation.
+        </p>
+      </div>
+    </header>
+
+    <nav class="mini-nav" aria-label="Broker resources">
+      <div class="wrap">
+        <a href="#videos">Videos</a>
+        <a href="#next-steps">Next Steps</a>
+        <a href="#pitch">How to Pitch</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section" id="videos" aria-labelledby="videos-title">
+        <div class="wrap">
+          <div class="section-header center">
+            <p class="eyebrow">Start Here</p>
+            <h2 id="videos-title">Three videos every broker should watch.</h2>
+            <p>
+              Roughly 15 minutes total. Watch in order, then share with your candidate as you move
+              them through the conversation.
+            </p>
+          </div>
+
+          <div class="video-grid featured">
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/rutF0S6o_4g"
+                title="FCI brand overview"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>FCI Brand Overview</h3>
+                <p>Start here. The brand, the model, and why FCI is a strong fit for the right operator.</p>
+                <a class="resource-link" href="https://youtu.be/rutF0S6o_4g" target="_blank" rel="noreferrer">Open on YouTube</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/maG-OS4D8Wk"
+                title="How to pitch FCI to clients"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>How to Pitch FCI to Your Clients</h3>
+                <p>A walkthrough of the most effective way to position FCI in a broker-led conversation.</p>
+                <a class="resource-link" href="https://youtu.be/maG-OS4D8Wk" target="_blank" rel="noreferrer">Open on YouTube</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/86GicN_vZec"
+                title="The ideal candidate for FCI"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>The Ideal Candidate for FCI</h3>
+                <p>The traits, background, and capital profile that predict success in the system.</p>
+                <a class="resource-link" href="https://youtu.be/86GicN_vZec" target="_blank" rel="noreferrer">Open on YouTube</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="next-steps" aria-labelledby="next-title">
+        <div class="wrap action-grid">
+          <article class="action-panel">
+            <span class="step">Step 1</span>
+            <h2 id="next-title">Submit a <span class="script-word">territory check.</span></h2>
+            <p>
+              Tell us about your candidate and their market. We confirm availability and fit, usually
+              within one business day.
+            </p>
+            <a
+              class="button"
+              href="mailto:aschlosser@fcifloors.com?subject=FCI%20Territory%20Check"
+            >Open the form</a>
+          </article>
+
+          <article class="action-panel green">
+            <span class="step">Step 2</span>
+            <h2>Book a <span class="script-word">15-minute call.</span></h2>
+            <p>
+              For candidates ready to talk. We run the qualification call and keep you in the loop on
+              next steps and timing.
+            </p>
+            <a
+              class="button"
+              href="mailto:aschlosser@fcifloors.com?subject=FCI%2015-Minute%20Broker%20Call"
+            >Open the scheduler</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="pitch" aria-labelledby="pitch-title">
+        <div class="wrap">
+          <div class="section-header">
+            <p class="eyebrow">How to Pitch</p>
+            <h2 id="pitch-title">The five things to lead with.</h2>
+            <p>
+              Use these talking points to frame FCI for a candidate. Adapt them to their background,
+              but keep the conversation centered on model, market, and operator fit.
+            </p>
+          </div>
+
+          <div class="talk-list">
+            <article class="talk-point">
+              <span class="talk-number">01</span>
+              <div>
+                <h3>The mobile flooring showroom</h3>
+                <p>
+                  No retail buildout. Owners run the business from a small office with a branded
+                  vehicle that carries thousands of samples to the customer's home.
+                </p>
+              </div>
+            </article>
+            <article class="talk-point">
+              <span class="talk-number">02</span>
+              <div>
+                <h3>Recession-resilient category</h3>
+                <p>
+                  Flooring is repair and replace, not discretionary. Homeowners delay, but do not
+                  skip, needed flooring updates.
+                </p>
+              </div>
+            </article>
+            <article class="talk-point">
+              <span class="talk-number">03</span>
+              <div>
+                <h3>Built for non-flooring operators</h3>
+                <p>
+                  Most FCI owners had never sold flooring before signing. The system is designed for
+                  operators who can lead people, process, and customer experience.
+                </p>
+              </div>
+            </article>
+            <article class="talk-point">
+              <span class="talk-number">04</span>
+              <div>
+                <h3>Marketing handled centrally</h3>
+                <p>
+                  Owners are not marketers. The field marketing team supports each location with
+                  digital, local, and lead-generation campaigns.
+                </p>
+              </div>
+            </article>
+            <article class="talk-point">
+              <span class="talk-number">05</span>
+              <div>
+                <h3>Strong unit economics</h3>
+                <p>
+                  Reference Item 19 in the FDD for current ACR, AUV, and owner P&amp;L ranges. Always
+                  direct candidates to the FDD for numbers, not quoted averages out of context.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" aria-labelledby="proof-title">
+        <div class="wrap">
+          <div class="section-header">
+            <p class="eyebrow">Send to Candidates</p>
+            <h2 id="proof-title">Brand and franchisee proof points.</h2>
+            <p>
+              Share these videos with candidates who want to hear directly from the brand, see the
+              support infrastructure, and understand the owner experience.
+            </p>
+          </div>
+
+          <div class="proof-grid">
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/gG8RX53WmKI"
+                title="Tom Wood, CEO at Floor Coverings International on what makes FCI great"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>CEO Message</h3>
+                <p>Tom Wood shares what makes the FCI model strong for franchisees and customers.</p>
+                <a class="resource-link" href="https://youtu.be/gG8RX53WmKI" target="_blank" rel="noreferrer">Share link</a>
+              </div>
+            </article>
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/24H5N0-PpcM"
+                title="Step inside a tour of the new Floor Coverings International headquarters"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>Inside FCI Headquarters</h3>
+                <p>A look at FCI's expanded headquarters and the support behind the system.</p>
+                <a class="resource-link" href="https://youtu.be/24H5N0-PpcM" target="_blank" rel="noreferrer">Share link</a>
+              </div>
+            </article>
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/b4MTYjv81Bc"
+                title="Floor Coverings International franchisee success stories Jean-Luc"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>Franchisee Story</h3>
+                <p>Owner perspective on choosing FCI and building within the franchise system.</p>
+                <a class="resource-link" href="https://youtu.be/b4MTYjv81Bc" target="_blank" rel="noreferrer">Share link</a>
+              </div>
+            </article>
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/VwQbluSpwkE"
+                title="Floor Coverings International franchisee success stories Shaun"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>Franchisee Story</h3>
+                <p>A second owner perspective to help candidates understand day-to-day fit.</p>
+                <a class="resource-link" href="https://youtu.be/VwQbluSpwkE" target="_blank" rel="noreferrer">Share link</a>
+              </div>
+            </article>
+            <article class="card">
+              <iframe
+                class="video-frame"
+                src="https://www.youtube.com/embed/6LOpNxtZvpk"
+                title="Floor Coverings International makes sure franchisees thrive"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h3>Training and Support</h3>
+                <p>Use this when candidates ask how FCI supports new owners after signing.</p>
+                <a class="resource-link" href="https://youtu.be/6LOpNxtZvpk" target="_blank" rel="noreferrer">Share link</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="downloads" aria-labelledby="downloads-title">
+        <div class="wrap">
+          <div class="section-header">
+            <p class="eyebrow">Downloads</p>
+            <h2 id="downloads-title">Leave-behinds and quick references.</h2>
+            <p>
+              Send these to candidates, use in your own prep, or attach to your initial pitch. We
+              refresh these quarterly.
+            </p>
+          </div>
+
+          <div class="download-grid">
+            <article class="download-card">
+              <span class="pdf-icon">PDF</span>
+              <div>
+                <h3>Pitch Sheet</h3>
+                <p>One-page brand overview with investment range, ideal candidate, and positioning notes.</p>
+                <a class="resource-link" href="https://katjudy.github.io/Frandev-Website/fci-pitch-sheet-2026.pdf">Download PDF</a>
+              </div>
+            </article>
+            <article class="download-card">
+              <span class="pdf-icon">PDF</span>
+              <div>
+                <h3>2 Minute Drill</h3>
+                <p>Talk track for the first two minutes of a broker-candidate conversation.</p>
+                <a class="resource-link" href="https://katjudy.github.io/Frandev-Website/fci-2-minute-drill-2026.pdf">Download PDF</a>
+              </div>
+            </article>
+            <article class="download-card">
+              <span class="pdf-icon">PDF</span>
+              <div>
+                <h3>Franchise Report</h3>
+                <p>Longer-form reference for candidates who want more context before the next call.</p>
+                <a class="resource-link" href="https://katjudy.github.io/Frandev-Website/fci-franchise-report-2026.pdf">Download PDF</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap">
+          <div class="section-header center">
+            <p class="eyebrow">Your Contact</p>
+            <h2 id="contact-title">Talk to the FCI frandev team directly.</h2>
+          </div>
+
+          <article class="contact-card">
+            <p class="contact-name">Amy Schlosser</p>
+            <p>Sr. Director, Franchise Development &amp; Broker Coach Success</p>
+            <p>
+              <a class="resource-link" href="mailto:aschlosser@fcifloors.com">aschlosser@fcifloors.com</a><br />
+              <a class="resource-link" href="tel:+14047860295">404.786.0295</a>
+            </p>
+          </article>
+
+          <p class="private-note">
+            This page is unlisted and intended for brokers in our network. Please do not share the URL
+            publicly. If you would like access for another team member at your brokerage, just let us know.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <img src="logo-black.png" alt="Floor Coverings International" />
+          <p>The mobile flooring showroom franchise. Building owners since 1988.</p>
+        </div>
+        <div>
+          <p>
+            This information is not intended as an offer to sell, or the solicitation of an offer to
+            buy, a franchise. It is for informational purposes only.
+          </p>
+          <p>&copy; 2026 Floor Coverings International. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
